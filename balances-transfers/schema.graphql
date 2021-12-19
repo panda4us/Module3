@@ -1,0 +1,16 @@
+type Account @entity {
+
+  id: ID! #address
+  }
+
+type Transfer @entity{
+  id: ID!
+
+  amount: BigInt #filed2 is an optional field
+
+  blockNumber: BigInt
+
+  to: Account#receiving address
+
+  
+}
